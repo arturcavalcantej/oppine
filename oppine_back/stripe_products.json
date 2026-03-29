@@ -1,0 +1,70 @@
+{
+  "products": [
+    {
+      "name": "Starter",
+      "tier": "starter",
+      "description": "Pequenos negócios locais",
+      "limits": {
+        "messages_per_month": 50,
+        "businesses": 1,
+        "templates_per_account": 10
+      },
+      "prices": {
+        "USD": { "monthly": 1500, "annual": 15000 },
+        "BRL": { "monthly": 4900, "annual": 49000 },
+        "EUR": { "monthly": 1400, "annual": 14000 }
+      },
+      "features": [
+        "50 envios/mês",
+        "1 negócio",
+        "Automação total",
+        "Triagem automática de feedback",
+        "Dashboard de métricas"
+      ]
+    },
+    {
+      "name": "Growth",
+      "tier": "growth",
+      "description": "Agências/Consultores",
+      "limits": {
+        "messages_per_month": -1,
+        "businesses": -1,
+        "templates_per_account": -1
+      },
+      "prices": {
+        "USD": { "monthly": 4900, "annual": 49000 },
+        "BRL": { "monthly": 14900, "annual": 149000 },
+        "EUR": { "monthly": 4500, "annual": 45000 }
+      },
+      "features": [
+        "Envios ilimitados",
+        "Negócios ilimitados",
+        "White-label (sua marca no sistema)",
+        "Gestão de múltiplos clientes",
+        "Suporte prioritário"
+      ],
+      "popular": true
+    }
+  ],
+  "country_currency_map": {
+    "BR": "BRL",
+    "US": "USD",
+    "CA": "USD",
+    "GB": "EUR",
+    "DE": "EUR",
+    "FR": "EUR",
+    "ES": "EUR",
+    "IT": "EUR",
+    "PT": "EUR",
+    "NL": "EUR",
+    "BE": "EUR",
+    "AT": "EUR",
+    "IE": "EUR",
+    "default": "USD"
+  },
+  "currency_symbols": {
+    "USD": "$",
+    "BRL": "R$",
+    "EUR": "€"
+  }
+}

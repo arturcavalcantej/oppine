@@ -1,0 +1,200 @@
+{
+  "common": {
+    "loading": "Cargando...",
+    "save": "Guardar",
+    "saving": "Guardando...",
+    "cancel": "Cancelar",
+    "delete": "Eliminar",
+    "edit": "Editar",
+    "create": "Crear",
+    "close": "Cerrar",
+    "confirm": "Confirmar",
+    "back": "Volver",
+    "next": "Siguiente",
+    "search": "Buscar",
+    "noResults": "No se encontraron resultados.",
+    "error": "Error",
+    "success": "Exito",
+    "add": "Agregar",
+    "remove": "Quitar",
+    "rename": "Renombrar",
+    "move": "Mover",
+    "description": "Descripcion",
+    "notes": "Notas",
+    "tags": "Etiquetas",
+    "addTags": "Agregar etiquetas...",
+    "showMore": "Ver mas",
+    "showLess": "Ver menos",
+    "saveChanges": "Guardar Cambios"
+  },
+  "auth": {
+    "login": "Iniciar sesion",
+    "logout": "Cerrar sesion",
+    "signIn": "Iniciar sesion",
+    "signOut": "Cerrar sesion",
+    "register": "Registrarse",
+    "createAccount": "Crear cuenta",
+    "email": "Correo electronico",
+    "password": "Contrasena",
+    "name": "Nombre",
+    "forgotPassword": "Olvido su contrasena?",
+    "backToHome": "Volver al Inicio",
+    "loginTitle": "Accede a tu cuenta",
+    "loginSubtitle": "Gestiona tu reputacion online de forma inteligente.",
+    "registerTitle": "Crea tu cuenta",
+    "registerSubtitle": "Empieza a blindar tu reputacion hoy.",
+    "noAccount": "No tienes una cuenta?",
+    "hasAccount": "Ya tienes una cuenta?",
+    "welcomeBack": "Bienvenido de vuelta!",
+    "welcomeTitle": "Tu reputacion en",
+    "welcomeHighlight": "piloto automatico",
+    "testimonial": "Despues de empezar a usar OPINNE, mis resenas en Google saltaron de 4.1 a 4.8 en solo 2 meses. Y lo mejor: sin ningun esfuerzo manual.",
+    "testimonialAuthor": "Carlos Mendes",
+    "testimonialRole": "Dueno de Barberia",
+    "validation": {
+      "emailRequired": "Por favor, ingrese un correo electronico valido",
+      "passwordMin": "La contrasena debe tener al menos 8 caracteres",
+      "nameRequired": "El nombre es obligatorio",
+      "nameMin": "El nombre debe tener al menos 2 caracteres",
+      "invalidCredentials": "Correo electronico o contrasena invalidos"
+    }
+  },
+  "nav": {
+    "overview": "Vista General",
+    "settings": "Configuracion",
+    "menu": "Menu",
+    "collapse": "Colapsar"
+  },
+  "project": {
+    "projects": "Negocios",
+    "project": "Negocio",
+    "selectProject": "Seleccionar Negocio",
+    "activeWorkspace": "Negocio Activo",
+    "noProjectSelected": "Ningun negocio seleccionado",
+    "createNewProject": "Agregar Nuevo Negocio",
+    "newProject": "Nuevo Negocio",
+    "projectName": "Nombre del Negocio",
+    "projectNamePlaceholder": "ej. Barberia de Juan",
+    "manageWorkspaces": "Administra tus negocios.",
+    "noProjects": "Aun no hay negocios",
+    "noProjectsDescription": "Agrega tu primer negocio para empezar a recolectar resenas.",
+    "createProject": "Agregar Negocio",
+    "creating": "Agregando...",
+    "lastEdited": "Editado recientemente",
+    "projectId": "ID del Negocio",
+    "validation": {
+      "nameRequired": "El nombre del negocio es obligatorio",
+      "nameTooLong": "El nombre del negocio es demasiado largo"
+    },
+    "toast": {
+      "created": "Negocio agregado con exito!",
+      "createError": "Error al agregar el negocio",
+      "multipleProjectsComingSoon": "Funcionalidad de multiples negocios proximamente."
+    }
+  },
+  "settings": {
+    "title": "Configuracion",
+    "subtitle": "Administra tu configuracion.",
+    "projectSettings": "Configuracion del Negocio",
+    "comingSoon": "Pagina de configuracion proximamente. Esto incluira edicion del nombre del negocio y configuracion de WhatsApp.",
+    "preferences": "Preferencias",
+    "language": "Idioma",
+    "languageDescription": "Elige el idioma de visualizacion de la aplicacion.",
+    "userPreferences": "Preferencias del Usuario",
+    "tabs": {
+      "preferences": "Preferencias",
+      "project": "Negocio",
+      "billing": "Plan"
+    }
+  },
+  "billing": {
+    "currentPlan": "Plan Actual",
+    "active": "Activo",
+    "inactive": "Inactivo",
+    "upgrade": "Mejorar Plan",
+    "changePlan": "Cambiar Plan",
+    "manageSubscription": "Gestionar Suscripcion",
+    "usage": "Uso",
+    "aiRequests": "Solicitudes de IA",
+    "inspirations": "Mensajes",
+    "dailyInspirations": "Mensajes Diarios",
+    "prompts": "Plantillas",
+    "perDay": "/dia",
+    "perWeek": "/semana",
+    "perMonth": "/mes",
+    "includedFeatures": "Caracteristicas Incluidas",
+    "features": {
+      "oneDnaPerCategory": "1 negocio",
+      "tenInspirationsMonth": "50 mensajes/mes",
+      "tenAiMessagesDay": "Triaje automatico",
+      "basicAiModels": "Plantillas basicas",
+      "onePrompt": "1 plantilla",
+      "fourDnasPerCategory": "4 negocios",
+      "thirtyInspirationsWeek": "200 mensajes/semana",
+      "allAiModels": "Todas las plantillas",
+      "unlimitedAiMessages": "Triaje con IA avanzada",
+      "fourCustomPrompts": "4 plantillas personalizadas",
+      "unlimitedDnas": "Negocios ilimitados",
+      "unlimitedInspirations": "Mensajes ilimitados",
+      "unlimitedPrompts": "Plantillas ilimitadas",
+      "twoMonthsFree": "2 meses gratis"
+    }
+  },
+  "upgrade": {
+    "upgrade": "Mejorar",
+    "upgradeNow": "Mejorar Ahora",
+    "limitReached": "Limite alcanzado",
+    "usageInfo": "Uso: {{current}}/{{limit}}",
+    "upgradeToUnlock": "Mejora tu plan para desbloquear mas funciones y continuar enviando mensajes.",
+    "seePlans": "Ver planes",
+    "navigateToProject": "Navega a un negocio para ver los planes."
+  },
+  "user": {
+    "user": "Usuario",
+    "profile": "Perfil"
+  },
+  "offer": {
+    "title": "Elige tu plan",
+    "subtitle": "Desbloquea todo el potencial de OPINNE",
+    "backToHome": "Volver al Inicio",
+    "hasAccount": "Ya tienes cuenta?",
+    "createAccount": "Crea tu cuenta",
+    "monthly": "Mensual",
+    "yearly": "Anual",
+    "twoMonthsFree": "2 meses gratis",
+    "mostPopular": "MAS POPULAR",
+    "select": "Seleccionar",
+    "startNow": "Empezar Ahora",
+    "billedMonthly": "Facturado mensualmente",
+    "billedYearly": "Facturado anualmente",
+    "chooseAnotherPlan": "Elegir otro plan",
+    "changePlan": "Cambiar plan",
+    "selectedPlan": "Plan seleccionado",
+    "createAccountAndSubscribe": "Crear Cuenta y Suscribirse",
+    "coupon": {
+      "title": "Cupon de Descuento",
+      "placeholder": "Ingresa el codigo",
+      "apply": "Aplicar",
+      "applied": "Aplicado!",
+      "invalid": "Cupon invalido o expirado",
+      "removed": "Cupon removido"
+    },
+    "toast": {
+      "accountCreated": "Cuenta creada con exito!",
+      "couponApplied": "Cupon aplicado!",
+      "checkoutError": "Error al iniciar el checkout"
+    },
+    "footer": "Pago seguro via Stripe. Cancela cuando quieras."
+  },
+  "oppine": {
+    "tagline": "Convierte clientes satisfechos en visibilidad y ventas en Google",
+    "benefits": {
+      "protection": "Proteccion de Reputacion",
+      "protectionDesc": "Feedback negativo es interceptado antes de hacerse publico.",
+      "automation": "Recoleccion Automatica",
+      "automationDesc": "Encuesta de satisfaccion via WhatsApp con alta tasa de respuesta.",
+      "growth": "Crecimiento en Google",
+      "growthDesc": "Aumenta tus resenas de 5 estrellas en Google My Business."
+    }
+  }
+}

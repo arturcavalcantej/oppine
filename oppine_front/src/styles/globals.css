@@ -1,0 +1,555 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@theme {
+  /* ========================================
+     OPINNE Brand Colors
+     Verde Confiança + Azul Blindagem
+     ======================================== */
+
+  /* Brand Colors */
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary-hover: var(--primary-hover);
+  --color-primary-light: var(--primary-light);
+
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary-dark: var(--secondary-dark);
+
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+
+  /* UI Colors */
+  --color-border: var(--border);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  /* Status Colors */
+  --color-success: var(--success);
+  --color-warning: var(--warning);
+  --color-error: var(--error);
+
+  /* Typography - Poppins */
+  --font-sans: 'Poppins', sans-serif;
+  --font-heading: 'Poppins', sans-serif;
+
+  /* Border Radius - OPINNE: 12px-16px (cantos arredondados generosos) */
+  --radius: var(--radius);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+
+  /* Shadcn Specifics */
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  /* ========================================
+     OPINNE Brand Colors
+     Blindagem de reputação e aceleração
+     de visibilidade no piloto automático
+     ======================================== */
+
+  /* Primary - Verde Confiança (WhatsApp, aprovação, crescimento) */
+  --primary: #00B37E;
+  --primary-foreground: #FFFFFF;
+  --primary-hover: #00996B;
+  --primary-light: rgba(0, 179, 126, 0.15);
+
+  /* Secondary - Azul Blindagem (autoridade, segurança, escudo) */
+  --secondary: #F8FAFC;
+  --secondary-foreground: #12263F;
+  --secondary-dark: #12263F;
+
+  /* Accent - Dourado Estrela (avaliações 5 estrelas) */
+  --accent: #FFB800;
+  --accent-foreground: #12263F;
+
+  /* ========================================
+     UI Colors
+     ======================================== */
+
+  /* Backgrounds */
+  --background: #FAFAF9;
+  --foreground: #12263F;
+
+  /* Muted/Subtle elements */
+  --muted: #F1F5F9;
+  --muted-foreground: #64748B;
+
+  /* Borders */
+  --border: #E2E8F0;
+
+  /* Status Colors */
+  --success: #00B37E;
+  --warning: #FFB800;
+  --error: #E74C3C;
+
+  /* Dark Mode Reference */
+  --background-dark: #0F172A;
+  --secondary-dark: #12263F;
+
+  /* Shadcn - Variables */
+  --card: #FFFFFF;
+  --card-foreground: #12263F;
+  --popover: #FFFFFF;
+  --popover-foreground: #12263F;
+  --destructive: #E74C3C;
+  --destructive-foreground: #FFFFFF;
+  --input: #E2E8F0;
+  --ring: #00B37E;
+  --radius: 0.75rem;
+  --chart-1: #00B37E;
+  --chart-2: #12263F;
+  --chart-3: #FFB800;
+  --chart-4: #00996B;
+  --chart-5: #E74C3C;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+}
+
+@keyframes pulse-slow {
+
+  0%,
+  100% {
+    opacity: 0.4;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: 0.7;
+    transform: scale(1.1);
+  }
+}
+
+@keyframes float {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes fade-in-up {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 8s infinite ease-in-out;
+}
+
+.animate-float {
+  animation: float 6s infinite ease-in-out;
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 0.8s ease-out forwards;
+}
+
+/* Novel Editor Styles */
+.novel-editor {
+  @apply prose prose-lg max-w-none;
+}
+
+.novel-editor .ProseMirror {
+  @apply focus:outline-none min-h-[500px];
+}
+
+.novel-editor .ProseMirror h1 {
+  @apply text-4xl font-bold text-[#1E293B] mb-4;
+}
+
+.novel-editor .ProseMirror h2 {
+  @apply text-3xl font-bold text-[#1E293B] mb-3;
+}
+
+.novel-editor .ProseMirror h3 {
+  @apply text-2xl font-semibold text-[#1E293B] mb-2;
+}
+
+.novel-editor .ProseMirror p {
+  @apply text-base text-[#1E293B] mb-4 leading-relaxed;
+}
+
+.novel-editor .ProseMirror ul,
+.novel-editor .ProseMirror ol {
+  @apply mb-4 pl-6;
+}
+
+.novel-editor .ProseMirror li {
+  @apply mb-2 text-[#1E293B];
+}
+
+.novel-editor .ProseMirror a {
+  @apply text-[#9064AB] underline hover:text-[#7A5299];
+}
+
+.novel-editor .ProseMirror code {
+  @apply bg-[#E2E8F0] px-1.5 py-0.5 rounded text-sm font-mono text-[#1E293B];
+}
+
+.novel-editor .ProseMirror pre {
+  @apply bg-[#F1F5F9] text-[#1E293B] p-4 rounded-lg overflow-x-auto mb-4 border border-[#E2E8F0];
+}
+
+.novel-editor .ProseMirror pre code {
+  @apply bg-transparent p-0;
+}
+
+.novel-editor .ProseMirror blockquote {
+  @apply border-l-4 border-[#9064AB] pl-4 italic text-[#64748B] my-4;
+}
+
+.novel-editor .ProseMirror img {
+  @apply rounded-lg shadow-lg my-4 max-w-full h-auto;
+}
+
+.novel-editor .ProseMirror hr {
+  @apply border-[#E2E8F0] my-6;
+}
+
+/* Placeholder */
+.novel-editor .ProseMirror p.is-editor-empty:first-child::before {
+  @apply text-[#94A3B8];
+  content: attr(data-placeholder);
+  float: left;
+  height: 0;
+  pointer-events: none;
+}
+
+/* Selection */
+.novel-editor .ProseMirror ::selection {
+  @apply bg-[#9064AB]/20;
+}
+
+/* Scrollbar hide utility */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* ReactMarkdown Code Block Styles (light theme) */
+.prose pre {
+  @apply bg-[#F1F5F9] text-[#1E293B] p-4 rounded-lg overflow-x-auto my-3 border border-[#E2E8F0];
+}
+
+.prose pre code {
+  @apply bg-transparent text-inherit p-0 text-sm font-mono;
+}
+
+.prose code:not(pre code) {
+  @apply bg-[#E2E8F0] text-[#1E293B] px-1.5 py-0.5 rounded text-xs font-mono;
+}
+
+/* ============================================
+   LANDING PAGE - PREMIUM ANIMATIONS
+   ============================================ */
+
+/* Smooth Scroll Container (Lenis) */
+html.lenis,
+html.lenis body {
+  height: auto;
+  overflow: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+/* ============================================
+   LETTER ANIMATION
+   ============================================ */
+
+.letter-animate {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(40px);
+}
+
+.letter-animate.revealed {
+  opacity: 1;
+  transform: translateY(0);
+  transition:
+    opacity 0.4s ease-out,
+    transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* ============================================
+   WEBGL CANVAS
+   ============================================ */
+
+.webgl-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.webgl-canvas canvas {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+/* ============================================
+   STICKY CTA
+   ============================================ */
+
+.sticky-cta {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 100;
+  opacity: 0;
+  transform: translateY(20px);
+  pointer-events: none;
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
+}
+
+.sticky-cta.visible {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+/* ============================================
+   HERO MOCKUP ANIMATIONS
+   ============================================ */
+
+@keyframes blob {
+
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+
+  33% {
+    transform: translate(30px, -50px) scale(1.1);
+  }
+
+  66% {
+    transform: translate(-20px, 20px) scale(0.9);
+  }
+}
+
+.animate-blob {
+  animation: blob 7s infinite ease-in-out;
+}
+
+.animation-delay-2000 {
+  animation-delay: 2s;
+}
+
+.animation-delay-4000 {
+  animation-delay: 4s;
+}
+
+@keyframes float-gentle {
+
+  0%,
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+
+  50% {
+    transform: translateY(-8px) rotate(1deg);
+  }
+}
+
+@keyframes pulse-glow {
+
+  0%,
+  100% {
+    box-shadow: 0 0 20px rgba(144, 100, 171, 0.3);
+  }
+
+  50% {
+    box-shadow: 0 0 40px rgba(144, 100, 171, 0.5);
+  }
+}
+
+@keyframes typing-dots {
+
+  0%,
+  60%,
+  100% {
+    opacity: 0.3;
+  }
+
+  30% {
+    opacity: 1;
+  }
+}
+
+.mockup-float {
+  animation: float-gentle 6s ease-in-out infinite;
+}
+
+.mockup-glow {
+  animation: pulse-glow 3s ease-in-out infinite;
+}
+
+.typing-dot:nth-child(1) {
+  animation: typing-dots 1.4s ease-in-out infinite 0s;
+}
+
+.typing-dot:nth-child(2) {
+  animation: typing-dots 1.4s ease-in-out infinite 0.2s;
+}
+
+.typing-dot:nth-child(3) {
+  animation: typing-dots 1.4s ease-in-out infinite 0.4s;
+}
+
+/* ============================================
+   GRADIENT ANIMATIONS
+   ============================================ */
+
+@keyframes gradient-shift {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animate-gradient {
+  background-size: 200% 200%;
+  animation: gradient-shift 8s ease infinite;
+}
+
+.animate-gradient-x {
+  background-size: 200% 200%;
+  animation: gradient-shift 8s ease infinite;
+}
+
+/* ============================================
+   BOUNCE ANIMATION
+   ============================================ */
+
+@keyframes bounce-slow {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+.animate-bounce-slow {
+  animation: bounce-slow 3s ease-in-out infinite;
+}
+
+/* ============================================
+   PERSPECTIVE
+   ============================================ */
+
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+/* ============================================
+   RESPONSIVE ADJUSTMENTS
+   ============================================ */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .letter-animate,
+  .mockup-float,
+  .mockup-glow,
+  .animate-blob,
+  .animate-gradient,
+  .animate-gradient-x,
+  .animate-bounce-slow {
+    animation: none !important;
+  }
+
+  .letter-animate {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  .sticky-cta {
+    transition: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .webgl-canvas {
+    display: none;
+  }
+
+  .sticky-cta {
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
+}
